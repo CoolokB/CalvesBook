@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="650.0" minWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BL.cBook.uiControllers.EditPageController">
+   <SplitPane dividerPositions="0.5" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane maxWidth="200.0" minWidth="200.0">
+         <Accordion maxHeight="550.0" maxWidth="200.0" minWidth="200.0">
+            <panes>
+               <TitledPane animated="false" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Birth">
+                  <AnchorPane maxWidth="200.0" minWidth="200.0" prefWidth="180.0">
+                     <Label layoutY="39.0" text="Date Of Birth" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Label>
+                     <GridPane layoutY="39.0" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="30.0">
+                        <columnConstraints>
+                           <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <DatePicker fx:id="birthFrom" GridPane.columnIndex="1" />
+                        <DatePicker fx:id="birthTo" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="From" />
+                        <Label text="To" GridPane.rowIndex="1" />
+                     </GridPane>
+                  </AnchorPane>
+               </TitledPane>
+               <TitledPane animated="false" layoutX="10.0" layoutY="120.0" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Calf Info">
+                  <AnchorPane maxWidth="200.0" minWidth="200.0" prefWidth="200.0">
+                     <Label layoutX="110.99999999999999" layoutY="94.99999999999999" text="Age" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="0.0">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Label>
+                     <GridPane AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="30.0">
+                        <columnConstraints>
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <ChoiceBox fx:id="quantity" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Quantity" GridPane.rowIndex="1" />
+                        <Label text="Breed" GridPane.rowIndex="3" />
+                        <Label text="Colostrum" GridPane.rowIndex="4" />
+                        <Label text="Gender" GridPane.rowIndex="2" />
+                        <ChoiceBox fx:id="gender" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <ChoiceBox fx:id="breed" layoutX="40.0" layoutY="44.0" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <ChoiceBox fx:id="colostrum" layoutX="40.0" layoutY="74.0" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="ageTo" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="ageFrom" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+                        <ChoiceBox fx:id="aliveChoiceBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label text="Alive" GridPane.rowIndex="5" />
+                     </GridPane>
+                  </AnchorPane>
+               </TitledPane>
+               <TitledPane animated="false" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Death">
+                  <AnchorPane maxWidth="200.0" minHeight="0.0" minWidth="200.0" prefHeight="180.0" prefWidth="200.0">
+                     <Label layoutY="42.0" text="Date Of Death" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Label>
+                     <GridPane layoutY="42.0" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="30.0">
+                        <columnConstraints>
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <DatePicker fx:id="deathFrom" GridPane.columnIndex="1" />
+                        <DatePicker fx:id="deathTo" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="From" />
+                        <Label text="To" GridPane.rowIndex="1" />
+                        <TextField fx:id="slaughterWeightFrom" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" GridPane.rowIndex="3" />
+                        <Label text="Slaught" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="43.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="slaughterWeightTo" layoutX="90.0" layoutY="74.0" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label text="er weight" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                     </GridPane>
+                  </AnchorPane>
+               </TitledPane>
+               <TitledPane animated="false" maxHeight="300.0" text="Treatment">
+                  <AnchorPane>
+                     <GridPane layoutX="32.0" layoutY="46.0" AnchorPane.leftAnchor="2.0">
+                        <columnConstraints>
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <DatePicker fx:id="treatmentDateTo" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </DatePicker>
+                        <Label text="slaughter To" GridPane.rowIndex="5" />
+                        <DatePicker fx:id="treatmentSlaughterFrom" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <DatePicker fx:id="treatmentSlaughterTo" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label text="slaughter From" GridPane.rowIndex="4" />
+                        <Label text="Occurrence" GridPane.rowIndex="6">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="Occurrence" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <TextField fx:id="TreatmentAgeFrom" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" GridPane.rowIndex="8" />
+                        <TextField fx:id="TreatmentAgeTo" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label text="Date To" GridPane.rowIndex="1" />
+                        <Label text="Date From" />
+                        <DatePicker fx:id="treatmentDateFrom" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" GridPane.columnIndex="1" />
+                        <Label text="milk From" GridPane.rowIndex="2" />
+                        <DatePicker fx:id="treatmentMilkFrom" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <DatePicker fx:id="treatmentMilkTo" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="milk To" GridPane.rowIndex="3" />
+                        <Label text="Age" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                     </GridPane>
+                     <Label layoutY="50.0" text="Treatment" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Label>
+                  </AnchorPane>
+               </TitledPane>
+               <TitledPane animated="false" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Feed History">
+                  <AnchorPane maxWidth="200.0" minWidth="200.0" prefWidth="180.0">
+                     <Label layoutY="51.0" text="Feed History" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Label>
+                     <GridPane layoutY="51.0" maxWidth="160.0" minWidth="160.0" prefWidth="160.0" AnchorPane.leftAnchor="2.0">
+                        <columnConstraints>
+                           <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="130.0" prefWidth="130.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <DatePicker fx:id="feedTo" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <DatePicker fx:id="feedFrom" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="Field" GridPane.rowIndex="1" />
+                        <Label text="Place" />
+                        <ChoiceBox fx:id="feedPlace" maxWidth="130.0" minWidth="130.0" prefWidth="130.0" GridPane.columnIndex="1" />
+                        <TextField fx:id="feedField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="From" GridPane.rowIndex="2" />
+                        <Label text="To" GridPane.rowIndex="3" />
+                     </GridPane>
+                  </AnchorPane>
+               </TitledPane>
+               <TitledPane animated="false" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Place of habitat">
+                  <AnchorPane maxWidth="200.0" minHeight="0.0" minWidth="200.0" prefHeight="180.0" prefWidth="200.0">
+                     <Label layoutY="48.0" maxWidth="110.0" text="Place of habitat" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Label>
+                     <GridPane layoutY="48.0" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="40.0">
+                        <columnConstraints>
+                           <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="130.0" prefWidth="130.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <ChoiceBox fx:id="placePlace" maxWidth="130.0" minWidth="130.0" prefWidth="130.0" GridPane.columnIndex="1" />
+                        <DatePicker fx:id="placeFrom" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <DatePicker fx:id="placeTo" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="Place" />
+                        <Label text="From" GridPane.rowIndex="2" />
+                        <Label text="To" GridPane.rowIndex="3" />
+                        <Label text="Field" GridPane.rowIndex="1" />
+                        <TextField fx:id="placeField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </GridPane>
+                  </AnchorPane>
+               </TitledPane>
+               <TitledPane animated="false" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Gestation">
+                  <AnchorPane maxWidth="200.0" minWidth="200.0" prefWidth="200.0">
+                     <Label text="Gestation" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                     </Label>
+                     <TextField fx:id="gestationFrom" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="40.0" />
+                     <TextField fx:id="gestationTo" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="40.0" />
+                  </AnchorPane>
+               </TitledPane>
+               <TitledPane animated="false" text="Sort by">
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <VBox layoutX="99.0" layoutY="76.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <RadioButton fx:id="radioID" mnemonicParsing="false" text="ID">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="first" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="radioAge" mnemonicParsing="false" text="Age" toggleGroup="$first">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="radioDate" mnemonicParsing="false" text="Date of birth" toggleGroup="$first">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="radioMin" mnemonicParsing="false" text="Min-&gt;Max">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="second" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="radioMax" mnemonicParsing="false" text="Max-&gt;Min" toggleGroup="$second">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                        <Button mnemonicParsing="false" onAction="#sort" stylesheets="/res/style.css" text="Sort">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </VBox>
+                  </AnchorPane>
+               </TitledPane>
+               <TitledPane animated="false" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Search Parameters">
+                  <ScrollPane maxHeight="500.0">
+                     <AnchorPane>
+                        <Label fx:id="SearchResults" layoutX="33.0" layoutY="53.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+                     </AnchorPane>
+                  </ScrollPane>
+               </TitledPane>
+            </panes>
+         </Accordion>
+         <VBox layoutX="29.0" layoutY="564.0" prefHeight="104.0" prefWidth="60.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0">
+            <Button maxWidth="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#filterCalves" prefWidth="60.0" stylesheets="/res/style.css" text="Filter">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button maxWidth="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#reset" prefWidth="60.0" stylesheets="/res/style.css" text="Reset">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button maxWidth="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#printPage" prefWidth="60.0" stylesheets="/res/style.css" text="Print">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </VBox>
+      </AnchorPane>
+      <AnchorPane>
+         <TableView fx:id="Table" maxWidth="1152.0" minWidth="1140.0" prefHeight="324.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columns>
+               <TableColumn fx:id="idColumn" maxWidth="200.0" minWidth="60.0" prefWidth="-1.0" text="ID" />
+               <TableColumn fx:id="dateOfBirthColumn" maxWidth="200.0" minWidth="100.0" prefWidth="-1.0" text="Date Of Birth" />
+               <TableColumn fx:id="genderColumn" maxWidth="200.0" minWidth="65.0" prefWidth="-1.0" text="Gender" />
+               <TableColumn fx:id="daysOfGestationColumn" maxWidth="200.0" minWidth="120.0" prefWidth="-1.0" text="Days Of Gestation" />
+               <TableColumn fx:id="breedColumn" maxWidth="200.0" minWidth="140.0" prefWidth="-1.0" text="Breed" />
+               <TableColumn fx:id="placeOfBirthColumn" maxWidth="200.0" minWidth="140.0" prefWidth="-1.0" text="Place of birth" />
+               <TableColumn fx:id="colostrumByBottleColumn" maxWidth="200.0" minWidth="139.0" prefWidth="-1.0" text="Colostrum by bottle" />
+               <TableColumn fx:id="quantityColumn" maxWidth="200.0" minWidth="65.0" prefWidth="-1.0" text="Quantity" />
+               <TableColumn fx:id="ageColumn" maxWidth="200.0" minWidth="59.0" prefWidth="-1.0" text="Age" />
+               <TableColumn fx:id="lactationNumberColumn" maxWidth="200.0" minWidth="85.0" prefWidth="-1.0" text="Lactation №" />
+               <TableColumn fx:id="milk90Column" maxWidth="200.0" minWidth="153.0" prefWidth="-1.0" text="90 Days Milk Production" />
+            </columns>
+            <columnResizePolicy>
+               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+            <contextMenu>
+               <ContextMenu>
+                  <items>
+                     <MenuItem fx:id="summary" mnemonicParsing="false" text="Summary" />
+                     <MenuItem fx:id="delete" mnemonicParsing="false" text="Delete" />
+                     <MenuItem fx:id="feedHistory" mnemonicParsing="false" text="feed History" />
+                     <MenuItem fx:id="placeHistory" mnemonicParsing="false" text="Place History" />
+                     <MenuItem fx:id="treatmentHistory" mnemonicParsing="false" text="Treatment History" />
+                  </items>
+               </ContextMenu>
+            </contextMenu>
+         </TableView>
+         <TableView fx:id="deathTable" layoutY="367.0" maxWidth="1152.0" minWidth="1140.0" prefHeight="324.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <columns>
+               <TableColumn fx:id="idColumn1" maxWidth="200.0" minWidth="60.0" prefWidth="-1.0" text="ID" />
+               <TableColumn fx:id="isAliveColumn" maxWidth="200.0" minWidth="50.0" prefWidth="-1.0" text="Is Alive" />
+               <TableColumn fx:id="deathDateColumn" maxWidth="200.0" minWidth="100.0" prefWidth="-1.0" text="Date of death" />
+               <TableColumn fx:id="reasonOfDeathColumn" maxWidth="600.0" minWidth="270.0" prefWidth="-1.0" text="Reason of Death" />
+               <TableColumn fx:id="causeOfDeathColumn" maxWidth="600.0" minWidth="270.0" prefWidth="-1.0" text="Cause of Death" />
+               <TableColumn fx:id="slaughterWeightColumn" maxWidth="200.0" minWidth="105.0" prefWidth="-1.0" text="Slaughter weight" />
+               <TableColumn maxWidth="600.0" minWidth="136.0" prefWidth="-1.0" text="Slaughter class">
+                  <columns>
+                     <TableColumn fx:id="slaughterClass1Column" maxWidth="200.0" minWidth="68.0" prefWidth="-1.0" text="Field 1" />
+                     <TableColumn fx:id="slaughterClass2Column" maxWidth="200.0" minWidth="68.0" prefWidth="-1.0" text="Field 2" />
+                  </columns>
+               </TableColumn>
+               <TableColumn maxWidth="600.0" minWidth="136.0" prefWidth="-1.0" text="Fat Class">
+                  <columns>
+                     <TableColumn fx:id="fatClass1Column" maxWidth="200.0" minWidth="68.0" prefWidth="-1.0" text="Field 1" />
+                     <TableColumn fx:id="fatClass2Column" maxWidth="200.0" minWidth="68.0" prefWidth="-1.0" text="Field 2" />
+                  </columns>
+               </TableColumn>
+            </columns>
+            <columnResizePolicy>
+               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </TableView>
+      </AnchorPane>
+   </SplitPane>
+</AnchorPane>

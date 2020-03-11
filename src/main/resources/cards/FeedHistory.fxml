@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" minHeight="370.0" minWidth="765.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BL.cBook.uiControllers.FeedHistoryController">
+    <TableView fx:id="FeedTable" layoutX="53.0" layoutY="100.0" maxHeight="370.0" minWidth="705.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="fPlaceColumn" maxWidth="-1.0" minWidth="110.0" prefWidth="-1.0" text="Place" />
+            <TableColumn fx:id="fFieldColumn" maxWidth="300.0" minWidth="70.0" prefWidth="-1.0" text="Field" />
+            <TableColumn fx:id="fFeedColumn" maxWidth="300.0" minWidth="70.0" prefWidth="-1.0" text="Feed" />
+            <TableColumn fx:id="fStartDateColumn" maxWidth="300.0" minWidth="110.0" prefWidth="-1.0" text="Start Date" />
+            <TableColumn fx:id="fEndDateColumn" maxWidth="300.0" minWidth="110.0" prefWidth="-1.0" text="End Date" />
+            <TableColumn maxWidth="600.0" minWidth="110.0" prefWidth="-1.0" text="Withdrawal">
+                <columns>
+                    <TableColumn fx:id="fWithdrawalUntilMilkColumn" maxWidth="300.0" minWidth="110.0" prefWidth="-1.0" text="Milk" />
+                    <TableColumn fx:id="fWithdrawalUntilSlaughterColumn" maxWidth="300.0" minWidth="110.0" prefWidth="-1.0" text="Slaughter" />
+                </columns>
+            </TableColumn>
+        </columns>
+    </TableView>
+   <Button layoutX="818.0" layoutY="241.0" minHeight="20.0" minWidth="50.0" mnemonicParsing="false" onAction="#handleAdd" stylesheets="/res/style.css" text="Add" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="5.0">
+      <font>
+         <Font size="10.0" />
+      </font></Button>
+   <Button layoutX="818.0" layoutY="263.0" minHeight="20.0" minWidth="50.0" mnemonicParsing="false" onAction="#handleDelete" stylesheets="/res/style.css" text="Delete" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="5.0">
+      <font>
+         <Font size="10.0" />
+      </font></Button>
+
+</AnchorPane>

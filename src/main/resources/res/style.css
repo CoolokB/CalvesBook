@@ -1,0 +1,10 @@
+.anchor{
+    -fx-background-image: url("1.jpg");
+    -fx-background-size: stretch;
+}
+.mainAnchor{
+-fx-background-color: #2E3348;
+}
+.button{
+    -fx-background-color: #F39C63;
+}

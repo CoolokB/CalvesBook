@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BL.cBook.uiControllers.PlaceOfHabitatController">
+    <TableView fx:id="table" layoutX="53.0" layoutY="100.0" maxHeight="302.0" minWidth="375.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="0.0">
+      <columns>
+          <TableColumn fx:id="pStartDateColumn" maxWidth="500.0" minWidth="110.0" prefWidth="-1.0" text="Start Date" />
+          <TableColumn fx:id="pEndDateColumn" maxWidth="500.0" minWidth="70.0" prefWidth="-1.0" text="End Date" />
+          <TableColumn fx:id="placeOfHabitatColumn" maxWidth="-1.0" minWidth="110.0" prefWidth="-1.0" text="Place of Habitat" />
+          <TableColumn fx:id="grazingFieldColumn" maxWidth="500.0" minWidth="70.0" prefWidth="-1.0" text="Grazing №" />
+      </columns>
+    </TableView>
+   <Button layoutX="522.0" layoutY="212.0" maxHeight="20.0" maxWidth="50.0" minHeight="20.0" minWidth="50.0" mnemonicParsing="false" onAction="#handleAdd" stylesheets="/res/style.css" text="Add" AnchorPane.bottomAnchor="70.0" AnchorPane.rightAnchor="5.0">
+      <font>
+         <Font size="10.0" />
+      </font></Button>
+   <Button layoutX="532.0" layoutY="222.0" maxHeight="20.0" maxWidth="50.0" minHeight="20.0" minWidth="50.0" mnemonicParsing="false" onAction="#handleDelete" stylesheets="/res/style.css" text="Delete" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="5.0">
+      <font>
+         <Font size="10.0" />
+      </font></Button>
+   <Button layoutX="542.0" layoutY="232.0" maxHeight="20.0" maxWidth="50.0" minHeight="20.0" minWidth="50.0" mnemonicParsing="false" onAction="#accept" stylesheets="/res/style.css" text="Accept" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="5.0">
+      <font>
+         <Font size="10.0" />
+      </font></Button>
+</AnchorPane>

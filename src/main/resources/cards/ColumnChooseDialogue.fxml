@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" minHeight="370.0" minWidth="740.0" stylesheets="/res/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BL.cBook.uiControllers.ColumnDialogueController">
+   <GridPane fx:id="grid" gridLinesVisible="true" layoutX="20.0" layoutY="20.0" maxHeight="300.0" minHeight="300.0" minWidth="570.0" stylesheets="/res/style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" />
+         <ColumnConstraints hgrow="SOMETIMES" />
+         <ColumnConstraints hgrow="SOMETIMES" />
+         <ColumnConstraints hgrow="SOMETIMES" />
+         <ColumnConstraints hgrow="SOMETIMES" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <CheckBox fx:id="DateOfBirth" mnemonicParsing="false" text="Date of birth" textAlignment="CENTER" GridPane.rowIndex="1">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="Gender" mnemonicParsing="false" text="Gender" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="GestationDays" mnemonicParsing="false" text="Gestation days" textAlignment="CENTER" GridPane.rowIndex="2">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="DeathDate" mnemonicParsing="false" text="Death date" textAlignment="CENTER" GridPane.rowIndex="4">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="DeathReason" mnemonicParsing="false" text="Death reason" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="DeathCause" mnemonicParsing="false" text="Death cause" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="SlaughterWeight" mnemonicParsing="false" text="Slaughter weight" textAlignment="CENTER" GridPane.rowIndex="5">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="SlaughterClassF1" mnemonicParsing="false" text="Slaughter class f1" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="GrazingN" mnemonicParsing="false" text="Grazing №" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="7">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="Age" mnemonicParsing="false" text="Age" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="dayMilk90" mnemonicParsing="false" text="90 day milk" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="LactationN" mnemonicParsing="false" text="Lactation №" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="Breed" mnemonicParsing="false" text="Breed" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="FeedPlace" mnemonicParsing="false" text="Place(feed)" textAlignment="CENTER" GridPane.rowIndex="9">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="PlaceStartDate" mnemonicParsing="false" text="Start date(habitat)" textAlignment="CENTER" GridPane.rowIndex="7">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="PlacePlace" mnemonicParsing="false" text="Place(habitat)" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="7">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="Birthplace" mnemonicParsing="false" text="Birth place" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="SlaughterClassF2" mnemonicParsing="false" text="Slaughter class f2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="FatClassF2" mnemonicParsing="false" text="Fat class f2" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="5">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="Colostrum" mnemonicParsing="false" text="Colostrum" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="PlaceEndDate" mnemonicParsing="false" text="End date(habitat)" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="FatClassF1" mnemonicParsing="false" text="Fat class f1" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="Quantity" mnemonicParsing="false" text="Quantity" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <Label text="Death Info" textAlignment="CENTER" GridPane.rowIndex="3">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Place of Habitat" textAlignment="CENTER" GridPane.rowIndex="6">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Feeding" textAlignment="CENTER" GridPane.rowIndex="8">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </Label>
+      <CheckBox fx:id="FeedField" mnemonicParsing="false" text="Field" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="9">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="FeedFeed" mnemonicParsing="false" text="Feed" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="9">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="FeedStartDate" mnemonicParsing="false" text="Start date(feed)" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="9">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="FeedEndDate" mnemonicParsing="false" text="End date(feed)" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="10">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="FeedWithdrawalMilk" mnemonicParsing="false" text="Withdrawal milk" textAlignment="CENTER" GridPane.rowIndex="10">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="FeedWithdrawalSlaughter" mnemonicParsing="false" text="Withdrawal slaughter" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="10">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="TreatmentDate" mnemonicParsing="false" text="Date" textAlignment="CENTER" GridPane.rowIndex="12">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="TreatmentOccurrence" mnemonicParsing="false" text="Occurrence" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="12">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="TreatmentMedicine" mnemonicParsing="false" text="Medicine" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="12">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <Label text="Treatment" textAlignment="CENTER" GridPane.rowIndex="11">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </Label>
+      <CheckBox fx:id="TreatmentAmount" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="Amount" GridPane.columnIndex="3" GridPane.rowIndex="12">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="WithdrawalDaysMilk" mnemonicParsing="false" text="Milk days" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="13">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="WithdrawalDaysSlaughter" mnemonicParsing="false" text="Slaughter days" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="13">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <Label text="Withdrawal" textAlignment="CENTER" GridPane.rowIndex="13">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Withdrawal" textAlignment="CENTER" GridPane.rowIndex="14">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </Label>
+      <CheckBox fx:id="WithdrawalUntilMilk" mnemonicParsing="false" text="Milk until" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="14">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="WithdrawalUntilSlaughter" mnemonicParsing="false" text="Slaughter until" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="14">
+         <opaqueInsets>
+            <Insets left="10.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <Label text="Main Info">
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </Label>
+      <CheckBox fx:id="tAge" mnemonicParsing="false" text="tAge" GridPane.columnIndex="3" GridPane.rowIndex="13">
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </GridPane.margin>
+      </CheckBox>
+   </GridPane>
+   <GridPane  layoutX="604.0" layoutY="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="118.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints maxHeight="20.0" minHeight="10.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="20.0" minHeight="10.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="20.0" minHeight="10.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="20.0" minHeight="10.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="20.0" minHeight="10.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="20.0" minHeight="10.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="20.0" minHeight="10.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="20.0" minHeight="10.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="20.0" minHeight="10.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="20.0" minHeight="10.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <Label text="Columns to be printed :" GridPane.columnIndex="1">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="column1" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="column2" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="column3" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="column5" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="column4" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="column6" layoutX="10.0" layoutY="70.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="column7" layoutX="10.0" layoutY="82.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="column8" layoutX="10.0" layoutY="94.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="column9" layoutX="10.0" layoutY="106.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </GridPane>
+   <Button layoutX="591.0" layoutY="288.0" minWidth="50.0" mnemonicParsing="false" onAction="#ok" text="Ok" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="80.0" />
+   <Button layoutX="660.0" layoutY="288.0" minWidth="50.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+</AnchorPane>

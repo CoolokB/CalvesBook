@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="370.0" minWidth="550.0" styleClass="mainAnchor" stylesheets="/res/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BL.cBook.uiControllers.ChartConstructorController">
+    <AnchorPane styleClass="anchor" stylesheets="/res/chartStyle.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <Button fx:id="build" layoutX="497.0" layoutY="294.0" mnemonicParsing="false" text="OK" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="7.0">
+           <font>
+               <Font size="10.0" />
+           </font>
+        </Button>
+      <RadioButton fx:id="radio1" layoutX="14.0" layoutY="127.0" mnemonicParsing="false" text="Age at first calving &amp; 90 day lactation " AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="80.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="first" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radio2" layoutX="11.0" layoutY="81.0" mnemonicParsing="false" text="Age at slaughter &amp; Slaughter weight" toggleGroup="$first" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="100.0">
+
+      </RadioButton>
+      <DatePicker fx:id="from" promptText="From" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <DatePicker fx:id="to" layoutY="43.0" promptText="To" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="40.0" />
+      <Accordion layoutX="243.0" layoutY="10.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="10.0">
+        <panes>
+           <TitledPane fx:id="healthPane" animated="false" text="Health">
+              <AnchorPane>
+                 <VBox layoutX="52.0" layoutY="36.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <CheckBox fx:id="Diarrhoea" mnemonicParsing="false" text="Diarrhoea">
+                       <VBox.margin>
+                          <Insets />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="Pneumonia" mnemonicParsing="false" text="Pneumonia">
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="Both" mnemonicParsing="false" text="Both">
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="Neither" mnemonicParsing="false" text="Neither">
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                 </VBox>
+              </AnchorPane>
+           </TitledPane>
+           <TitledPane fx:id="placePane" animated="false" text="Place of calving">
+              <AnchorPane>
+                 <VBox layoutX="64.0" layoutY="-5.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <CheckBox fx:id="UNKNOWN" mnemonicParsing="false" text="UNKNOWN">
+                       <VBox.margin>
+                          <Insets />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="CALVING_BOX" mnemonicParsing="false" text="CALVING_BOX">
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="SICK_BOX" mnemonicParsing="false" text="SICK_BOX">
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="COWSHED_PASSAGE" mnemonicParsing="false" text="COWSHED_PASSAGE">
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="YOUNGSTOCKSHED" mnemonicParsing="false" text="YOUNGSTOCKSHED">
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                     <CheckBox fx:id="FIELD" layoutX="10.0" layoutY="114.0" mnemonicParsing="false" text="FIELD">
+                        <VBox.margin>
+                           <Insets top="10.0" />
+                        </VBox.margin>
+                     </CheckBox>
+                 </VBox>
+              </AnchorPane>
+           </TitledPane>
+           <TitledPane fx:id="gestationPane" animated="false" text="Gestation days">
+              <AnchorPane>
+                 <VBox layoutX="50.0" layoutY="-19.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <CheckBox fx:id="gestationA" mnemonicParsing="false" text="250-260">
+                       <padding>
+                          <Insets right="10.0" />
+                       </padding>
+                       <VBox.margin>
+                          <Insets />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="gestationB" mnemonicParsing="false" text="261-270">
+                       <padding>
+                          <Insets right="10.0" />
+                       </padding>
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="gestationC" mnemonicParsing="false" text="271-276">
+                       <padding>
+                          <Insets right="10.0" />
+                       </padding>
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="gestationD" mnemonicParsing="false" text="277-283">
+                       <padding>
+                          <Insets right="10.0" />
+                       </padding>
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="gestationE" mnemonicParsing="false" text="284-290">
+                       <padding>
+                          <Insets right="10.0" />
+                       </padding>
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="gestationF" mnemonicParsing="false" text="291-300">
+                       <padding>
+                          <Insets right="10.0" />
+                       </padding>
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="gestationG" mnemonicParsing="false" text="301-310">
+                       <padding>
+                          <Insets right="10.0" />
+                       </padding>
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                 </VBox>
+              </AnchorPane>
+           </TitledPane>
+           <TitledPane fx:id="genderPane" animated="false" text="Gender">
+              <AnchorPane>
+                 <VBox AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <CheckBox fx:id="genderA" mnemonicParsing="false" text="Male">
+                       <VBox.margin>
+                          <Insets />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="genderB" mnemonicParsing="false" text="Female single ">
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="genderC" mnemonicParsing="false" text="Female twin or triplet ">
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                 </VBox>
+              </AnchorPane>
+           </TitledPane>
+           <TitledPane fx:id="breedPane" animated="false" text="Breed">
+              <AnchorPane>
+                 <VBox layoutX="75.0" layoutY="-78.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <CheckBox fx:id="SLB" mnemonicParsing="false" text="SLB">
+                       <VBox.margin>
+                          <Insets />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="SRB" mnemonicParsing="false" text="SRB">
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="SLBXSRB" mnemonicParsing="false" text="SLBXSRB">
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="XCHAR" mnemonicParsing="false" text="XCHAR">
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="XHER" mnemonicParsing="false" text="XHER">
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="XAA" mnemonicParsing="false" text="XAA">
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="XJER" mnemonicParsing="false" text="XJER">
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                    <CheckBox fx:id="XSKB" mnemonicParsing="false" text="XSKB">
+                       <VBox.margin>
+                          <Insets top="10.0" />
+                       </VBox.margin>
+                    </CheckBox>
+                 </VBox>
+              </AnchorPane>
+           </TitledPane>
+        </panes>
+      </Accordion>
+    </AnchorPane>
+</AnchorPane>

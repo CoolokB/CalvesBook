@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="50.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BL.cBook.uiControllers.PlaceListEditController">
+    <TableView fx:id="table" layoutX="53.0" layoutY="100.0" maxHeight="50.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="0.0">
+      <columns>
+          <TableColumn fx:id="pStartDateColumn" maxWidth="-1.0" minWidth="110.0" prefWidth="-1.0" text="Start Date" />
+          <TableColumn fx:id="pEndDateColumn" maxWidth="-1.0" minWidth="110.0" prefWidth="-1.0" text="End Date" />
+          <TableColumn fx:id="placeOfHabitatColumn" maxWidth="-1.0" minWidth="110.0" prefWidth="-1.0" text="Place of Habitat" />
+          <TableColumn fx:id="grazingFieldColumn" maxWidth="-1.0" minWidth="70.0" prefWidth="-1.0" text="Grazing №" />
+      </columns>
+    </TableView>
+    <Button fx:id="confirm" layoutX="507.0" layoutY="207.0" minHeight="22.0" minWidth="60.0" mnemonicParsing="false" onAction="#handleConfirm" stylesheets="/res/style.css" text="Confirm" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+</AnchorPane>
